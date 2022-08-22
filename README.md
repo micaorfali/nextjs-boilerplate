@@ -33,3 +33,18 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 "# nextjs-boilerplate" 
+
+
+# Brief proyecto
+
+Un portfolio de trabajos destacados de los estudiantes de UMAI de este equipo. 
+
+## Contenido de la Landing Page
+
+- NavBar: HOME (logo), TRABAJOS, NOSOTROS
+- Hero con título y descripción 
+- Filtro por materia, estudiante y año
+- Grilla de trabajos (foto de portada, titulo, año)
+- Single product de cada trabajo (galeria de fotos, titulo, año, nombre estudiante, materia)
+- Nosotros: foto, nombre, pequeña biografía
+- Footer: Redes sociales de UMAI
