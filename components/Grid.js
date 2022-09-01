@@ -4,7 +4,7 @@ import Column from './Column';
 const Grid = () => {
   return (
     <div className="container is-widescreen my-6">
-      <Column>hola</Column>
+      <Column></Column>
       <Column></Column>
       <Column></Column>
       <Column></Column>
