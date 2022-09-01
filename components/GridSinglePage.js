@@ -2,12 +2,10 @@ import React from 'react';
 
 const GridSinglePage = () => {
   return (
-    <div>
-      <div class="columns">
-        <div class="column">First column</div>
-        <div class="column">Second column</div>
-        <div class="column">Third column</div>
-      </div>
+    <div className="columns is-variable is-3">
+      <div className="column ">First column</div>
+      <div className="column ">Second column</div>
+      <div className="column ">Third column</div>
     </div>
   );
 };
