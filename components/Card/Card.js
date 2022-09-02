@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './Card.module.css';
 
 const Card = () => {
   return (
-    <div className="card">
+    <div className={`card ${styles['container']}`}>
       <div className="card-image">
         <figure className="image is-4by3">
             <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
