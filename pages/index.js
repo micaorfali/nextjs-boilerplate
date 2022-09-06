@@ -10,14 +10,21 @@ import Grid from '../components/Grid/Grid';
 import Title from '../components/Title/Title';
 import Column_5 from '../components/Column_5/Column_5';
 import Footer from '../components/Footer/Footer';
+import Subtitle from '../components/Subtitle/Subtitle';
+import Hero_2 from '../components/Hero_2/Hero_2';
 
 export default function Home() {
   return (
     <>
       <NavBar></NavBar>
       <Hero></Hero>
+      <Title>Bienvenidos</Title>
+      <Hero_2></Hero_2>
+      <Subtitle>UMAI</Subtitle>
+      <Title>Proyectos</Title>
       <Grid></Grid>
-      <Title></Title>
+      <Subtitle>Conocenos</Subtitle>
+      <Title>Nosotros</Title>
       <Column_5></Column_5>
       <Footer></Footer>
     </>

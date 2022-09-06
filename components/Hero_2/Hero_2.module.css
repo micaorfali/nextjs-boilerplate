@@ -1,0 +1,11 @@
+.container{
+    background-image: url('/assets/imagenAbajo2.svg');
+    width: 100%;
+    background-position: 10% 55%;
+    background-size: cover;
+}
+
+.text{
+    color: #E77D2D;
+    padding-left: 5em;
+}

@@ -6,27 +6,25 @@ const Card = () => {
     <div className={`card ${styles['container']}`}>
       <div className="card-image">
         <figure className="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+          <img
+            src="https://bulma.io/images/placeholders/1280x960.png"
+            alt="Placeholder image"
+          />
         </figure>
       </div>
       <div className="card-content">
         <div className="media">
-          <div className="media-left">
-            <figure className="image is-48x48">
-              <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
-            </figure>
-          </div>
           <div className="media-content">
-            <p className="title is-4">John Smith</p>
-            <p className="subtitle is-6">@johnsmith</p>
+            <span className={`tag ${styles['tagg']}`}>Programación</span>
+            <p className={`title is-4 ${styles['title']}`}>John Smith</p>
           </div>
         </div>
 
-        <div className="content">
+        <div className={`content ${styles['text']}`}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-          iaculis mauris. <a>@bulmaio</a>.<a href="#">#css</a>{' '}
-          <a href="#">#responsive</a>
+          iaculis mauris.
         </div>
+        <button className={`button ${styles['boton']}`}>VER</button>
       </div>
     </div>
   );

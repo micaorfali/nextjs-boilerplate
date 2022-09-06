@@ -4,18 +4,14 @@ import Image from 'next/image';
 
 const Card_Rounded = () => {
   return (
-    <div className={`card ${styles['container']}`}>
-      <div className="card-image">
-        <figure className="image">
-          <Image
-            src="https://bulma.io/images/placeholders/1280x960.png"
-            alt="Placeholder image"
-            height={1280}
-            width={960}
-          />
-        </figure>
-      </div>
-    </div>
+    <figure className="image is-128x128 mx-auto my-0">
+      <Image className="is-rounded"
+        src="https://bulma.io/images/placeholders/1280x960.png"
+        alt="Placeholder image"
+        height={256}
+        width={256}
+      />
+    </figure>
   );
 };
 

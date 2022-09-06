@@ -1,12 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from './NavBar.module.css';
 
 const NavBar = () => (
-  <nav className="navbar" role="navigation" aria-label="main navigation">
+  <nav
+    className={`navbar is-black is-fixed-top ${styles['container']}`}
+    role="navigation"
+    aria-label="main navigation"
+  >
     <div className="navbar-brand">
       <a className="navbar-item" href="https://bulma.io">
         <Image
-          src="https://bulma.io/images/bulma-logo.png"
+          src="/assets/logo.svg"
           alt="Bulma: a modern CSS framework based on Flexbox"
           width={112}
           height={28}
@@ -22,13 +27,35 @@ const NavBar = () => (
       <span></span>
     </div>
     <div id="navbarExampleTransparentExample" className="navbar-menu">
-      <div className="navbar-start">
-        <a className="navbar-item" href="https://bulma.io/">
-          Home
-        </a>
-        <a className="navbar-item" href="https://bulma.io/">
-          Trabajos
-        </a>
+      <div className="navbar-end">
+        <div className="navbar-item has-dropdown is-hoverable">
+          <a
+            className="navbar-link"
+            href="https://bulma.io/documentation/overview/start/"
+          >
+            Proyectos
+          </a>
+          <div className="navbar-dropdown is-boxed">
+            <a
+              className="navbar-item"
+              href="https://bulma.io/documentation/overview/start/"
+            >
+              Overview
+            </a>
+            <a
+              className="navbar-item"
+              href="https://bulma.io/documentation/overview/modifiers/"
+            >
+              Modifiers
+            </a>
+            <a
+              className="navbar-item"
+              href="https://bulma.io/documentation/columns/basics/"
+            >
+              Columns
+            </a>
+          </div>
+        </div>
         <a className="navbar-item" href="https://bulma.io/">
           Nosotros
         </a>
