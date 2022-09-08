@@ -1,11 +1,10 @@
 import React from 'react';
+import styles from '../Hero/Hero.module.css';
 
 const Hero = () => {
   return (
-    <section className="hero is-medium is-link">
+    <section className={`hero is-large ${styles['container']}`}>
       <div className="hero-body">
-        <p className="title">Medium hero</p>
-        <p className="subtitle">Medium subtitle</p>
       </div>
     </section>
   );

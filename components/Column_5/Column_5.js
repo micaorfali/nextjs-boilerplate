@@ -1,24 +1,24 @@
 import React from 'react';
-import Card from './Card';
+import Card_Rounded from '../Card_Rounded/Card_Rounded';
 
 const Column_5 = () => {
   return (
     <div className="container is-widescreen my-6">
       <div className="columns is-multiline is-justify-content-center">
         <div className="column is-one-third">
-          <Card></Card>
+          <Card_Rounded></Card_Rounded>
         </div>
         <div className="column is-one-third">
-          <Card></Card>
+          <Card_Rounded></Card_Rounded>
         </div>
         <div className="column is-one-third">
-          <Card></Card>
+          <Card_Rounded></Card_Rounded>
         </div>
         <div className="column is-one-third">
-          <Card></Card>
+          <Card_Rounded></Card_Rounded>
         </div>
         <div className="column is-one-third">
-          <Card></Card>
+          <Card_Rounded></Card_Rounded>
         </div>
       </div>
     </div>
