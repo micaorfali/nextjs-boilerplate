@@ -8,13 +8,13 @@ const NavBar = () => (
     role="navigation"
     aria-label="main navigation"
   >
-    <div className="navbar-brand">
-      <a className="navbar-item" href="https://bulma.io">
+    <div className="navbar-brand pl-6">
+      <a className="navbar-item py-5" href="https://bulma.io">
         <Image
           src="/assets/logo.svg"
           alt="Bulma: a modern CSS framework based on Flexbox"
-          width={112}
-          height={28}
+          width={124}
+          height={40}
         />
       </a>
     </div>
@@ -27,7 +27,7 @@ const NavBar = () => (
       <span></span>
     </div>
     <div id="navbarExampleTransparentExample" className="navbar-menu">
-      <div className="navbar-end">
+      <div className="navbar-end pr-6">
         <div className="navbar-item has-dropdown is-hoverable">
           <a
             className="navbar-link"

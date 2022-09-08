@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Card.module.css';
+import Link from 'next/link';
 
 const Card = () => {
   return (
@@ -24,7 +25,9 @@ const Card = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
           iaculis mauris.
         </div>
-        <button className={`button ${styles['boton']}`}>VER</button>
+        <Link href="/singlepage">
+          <a className={`button ${styles['boton']}`}> VER </a>
+        </Link>
       </div>
     </div>
   );
