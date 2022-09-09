@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './NavBar.module.css';
+import Link from 'next/link';
 
 const NavBar = () => (
   <nav
@@ -9,14 +10,16 @@ const NavBar = () => (
     aria-label="main navigation"
   >
     <div className="navbar-brand pl-6">
-      <a className="navbar-item py-5" href="https://bulma.io">
-        <Image
-          src="/assets/logo.svg"
-          alt="Bulma: a modern CSS framework based on Flexbox"
-          width={124}
-          height={40}
-        />
-      </a>
+      <Link href="/index">
+        <a className="navbar-item py-5">
+          <Image
+            src="/assets/logo.svg"
+            alt="Bulma: a modern CSS framework based on Flexbox"
+            width={124}
+            height={40}
+          />
+        </a>
+      </Link>
     </div>
     <div
       className="navbar-burger"
@@ -28,37 +31,12 @@ const NavBar = () => (
     </div>
     <div id="navbarExampleTransparentExample" className="navbar-menu">
       <div className="navbar-end pr-6">
-        <div className="navbar-item has-dropdown is-hoverable">
-          <a
-            className="navbar-link"
-            href="https://bulma.io/documentation/overview/start/"
-          >
-            Proyectos
-          </a>
-          <div className="navbar-dropdown is-boxed">
-            <a
-              className="navbar-item"
-              href="https://bulma.io/documentation/overview/start/"
-            >
-              Overview
-            </a>
-            <a
-              className="navbar-item"
-              href="https://bulma.io/documentation/overview/modifiers/"
-            >
-              Modifiers
-            </a>
-            <a
-              className="navbar-item"
-              href="https://bulma.io/documentation/columns/basics/"
-            >
-              Columns
-            </a>
-          </div>
-        </div>
-        <a className="navbar-item" href="https://bulma.io/">
-          Nosotros
-        </a>
+        <Link href="/disenio">
+          <a className="navbar-item has-text-weight-bold">Programación</a>
+        </Link>
+        <Link href="/programacion">
+          <a className="navbar-item has-text-weight-bold">Diseño</a>
+        </Link>
       </div>
     </div>
   </nav>

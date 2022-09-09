@@ -1,15 +1,18 @@
 import React from 'react';
 import styles from './Card.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Card = () => {
   return (
     <div className={`card ${styles['container']}`}>
-      <div className="card-image">
-        <figure className="image is-4by3">
-          <img
-            src="https://bulma.io/images/placeholders/1280x960.png"
+      <div>
+        <figure className={`${styles['figurecontainer']}`}>
+          <Image
+            src="/assets/hero.png"
             alt="Placeholder image"
+            width={1200}
+            height={900}
           />
         </figure>
       </div>
@@ -19,11 +22,6 @@ const Card = () => {
             <span className={`tag ${styles['tagg']}`}>Programación</span>
             <p className={`title is-4 ${styles['title']}`}>John Smith</p>
           </div>
-        </div>
-
-        <div className={`content ${styles['text']}`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-          iaculis mauris.
         </div>
         <Link href="/singlepage">
           <a className={`button ${styles['boton']}`}> VER </a>

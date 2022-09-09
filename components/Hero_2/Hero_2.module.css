@@ -2,10 +2,13 @@
     background-image: url('/assets/imagenAbajo2.svg');
     width: 100%;
     background-position: 10% 55%;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .text{
     color: #E77D2D;
-    padding-left: 5em;
+    padding-left: 2em;
+    font-size: 1.6em;
+    text-align: center;
 }
