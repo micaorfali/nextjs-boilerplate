@@ -46,7 +46,7 @@ const Footer = () => {
                     className={`bd-tw-button button ${styles['footerbutton']}`}
                   >
                     <Image
-                      src="/assets/Youtube.svg"
+                      src="/assets/YouTube.svg"
                       alt="Bulma: a modern CSS framework based on Flexbox"
                       width={20}
                       height={20}
