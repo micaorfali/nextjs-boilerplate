@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../CardRounded/CardRounded.module.css';
+import styles from '../Card_Rounded/Card_Rounded.module.css';
 import Image from 'next/image';
 
 const Card_Rounded = () => {
