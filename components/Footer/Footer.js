@@ -9,7 +9,7 @@ const Footer = () => {
       <nav className={`navbar ${styles['footercontent']}`}>
         <div className="navbar-brand">
           <a className="navbar-item" href="https://bulma.io">
-            <Link href="http://localhost:3000/">
+            <Link href="/">
               <Image
                 src="/assets/logo.svg"
                 alt="Bulma: a modern CSS framework based on Flexbox"
