@@ -1,5 +1,5 @@
 import React from 'react';
-import Card_Rounded from '../Card_Rounded/Card_Rounded';
+import Card_Rounded from '../CardRounded/CardRounded';
 import styles from './Column_5.module.css';
 
 const Column_5 = () => {
