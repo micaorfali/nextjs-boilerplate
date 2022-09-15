@@ -10,16 +10,14 @@ const NavBar = () => (
     aria-label="main navigation"
   >
     <div className="navbar-brand">
-      <a className="navbar-item" href="https://bulma.io">
-        <Link href="/">
-          <Image
-            src="/assets/logo.svg"
-            alt="Bulma: a modern CSS framework based on Flexbox"
-            width={112}
-            height={28}
-          />
-        </Link>
-      </a>
+      <Link className="navbar-item" href="/">
+        <Image
+          src="/assets/logo.svg"
+          alt="Bulma: a modern CSS framework based on Flexbox"
+          width={112}
+          height={28}
+        />
+      </Link>
     </div>
     <div
       className="navbar-burger"
@@ -32,36 +30,36 @@ const NavBar = () => (
     <div id="navbarExampleTransparentExample" className="navbar-menu">
       <div className="navbar-end">
         <div className="navbar-item has-dropdown is-hoverable">
-          <a
+          <Link
             className="navbar-link"
             href="https://bulma.io/documentation/overview/start/"
           >
             Proyectos
-          </a>
+          </Link>
           <div className="navbar-dropdown is-boxed">
-            <a
+            <Link
               className="navbar-item"
               href="https://bulma.io/documentation/overview/start/"
             >
               Overview
-            </a>
-            <a
+            </Link>
+            <Link
               className="navbar-item"
               href="https://bulma.io/documentation/overview/modifiers/"
             >
               Modifiers
-            </a>
-            <a
+            </Link>
+            <Link
               className="navbar-item"
               href="https://bulma.io/documentation/columns/basics/"
             >
               Columns
-            </a>
+            </Link>
           </div>
         </div>
-        <a className="navbar-item" href="https://bulma.io/">
+        <Link className="navbar-item" href="https://bulma.io/">
           Nosotros
-        </a>
+        </Link>
       </div>
     </div>
   </nav>
