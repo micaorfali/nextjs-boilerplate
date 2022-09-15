@@ -1,3 +1,54 @@
-/*.cardimg:hover{
-    padding-top: 10em;
-}*/
+.container {
+    position: relative;
+    width: 50%;
+  }
+
+.is-rounded{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #6F2977;
+  border-radius: 9999px;
+  height: 97%;
+  text-align: center;
+  }
+  
+
+  .middle:hover{
+    opacity: 0.5!important;
+  }
+
+  .container:hover .is-rounded {
+    opacity: 0.3!important;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 1.2em;
+    padding: 3em 1em 0 1em;
+    font-weight: bold;
+  }
+
+  .text2 {
+    color: white;
+    font-size: 0.8em;
+  }
