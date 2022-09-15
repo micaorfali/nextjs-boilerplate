@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className={`hero is-large ${styles['container']}`}>
       <div className="hero-body">
-        <div className="columns">
+        <div className="columns is-variable">
           <div className="column"></div>
           <div className="column">
             <p className={`${styles['text']}`}>
