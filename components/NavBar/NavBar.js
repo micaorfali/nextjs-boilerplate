@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './NavBar.module.css';
 
 const NavBar = () => (
@@ -10,12 +11,14 @@ const NavBar = () => (
   >
     <div className="navbar-brand">
       <a className="navbar-item" href="https://bulma.io">
-        <Image
-          src="/assets/logo.svg"
-          alt="Bulma: a modern CSS framework based on Flexbox"
-          width={112}
-          height={28}
-        />
+        <Link href="/">
+          <Image
+            src="/assets/logo.svg"
+            alt="Bulma: a modern CSS framework based on Flexbox"
+            width={112}
+            height={28}
+          />
+        </Link>
       </a>
     </div>
     <div
