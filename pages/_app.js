@@ -1,9 +1,4 @@
 import '../styles/globals.css';
-<<<<<<< Updated upstream
-
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-=======
 import { FavProvider } from '../contexts/FavContext';
 
 function MyApp({ Component, pageProps }) {
@@ -12,7 +7,6 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
     </FavProvider>
   );
->>>>>>> Stashed changes
 }
 
 export default MyApp;
