@@ -347,3 +347,7 @@ next-env.d.ts
 .yarn/cache/yocto-queue-npm-0.1.0-c6c9a7db29-f77b3d8d00.zip
 .yarn/install-state.gz
 .yarnrc.yml
+.yarn/install-state.gz
+package-lock.json
+yarn.lock
+.yarn/cache/yarn-npm-1.22.19-6ba13b96dc-b43d2cc5fe.zip
