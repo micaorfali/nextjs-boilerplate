@@ -13,10 +13,19 @@ import Column_5 from '../components/Column_5/Column_5';
 import Footer from '../components/Footer/Footer';
 import Subtitle from '../components/Subtitle/Subtitle';
 import Hero_2 from '../components/Hero_2/Hero_2';
+import { FavContext } from '../contexts/FavContext';
+import { useContext } from 'react';
 
 export default function Home() {
+  const { fav, setFav } = useContext(FavContext);
+
   return (
     <>
+      {/* 
+    {fav.map((item) => (
+        <p key={item.id}>{item.name} </p>
+    ))} 
+    */}
       <NavBar></NavBar>
       <Hero></Hero>
       <Title>Bienvenidos</Title>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from './NavBar.module.css';
 import Link from 'next/link';
+import styles from './NavBar.module.css';
 
 const NavBar = () => (
   <nav
@@ -10,7 +10,7 @@ const NavBar = () => (
     aria-label="main navigation"
   >
     <div className="navbar-brand pl-6">
-      <Link href="/index">
+      <Link href="/">
         <a className="navbar-item py-5">
           <Image
             src="/assets/logo.svg"
