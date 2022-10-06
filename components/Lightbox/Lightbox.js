@@ -36,7 +36,7 @@ const Lightbox = ({ stateModal }) => {
             </div>
             <div className="has-text-centered">
               <h1>Sofia Bonavena</h1>
-              <p>Diseño UI - 3er año - 2021</p>
+              <p>Diseño - 3er año - 2021</p>
             </div>
           </div>
         </section>
