@@ -35,7 +35,7 @@ const Lightbox = ({ stateModal }) => {
               </figure>
             </div>
             <div className="has-text-centered">
-              <h1>Sofia Bonavena</h1>
+              <h1>Sofi Bonavena</h1>
               <p>Diseño - 3er año - 2021</p>
             </div>
           </div>
