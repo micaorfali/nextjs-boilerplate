@@ -7,6 +7,6 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
     </FavProvider>
   );
-}
+ }
 
 export default MyApp;

@@ -16,12 +16,11 @@ const Lightbox = ({ stateModal }) => {
       <div className="modal-card">
         <header className="modal-card-head">
           <Image
-            src="/assets/logo.svg"
+            src="/assets/logonegro.svg"
             alt="Bulma: a modern CSS framework based on Flexbox"
             width={124}
             height={40}
           />
-          <button className="delete" aria-label="close"></button>
         </header>
         <section className="modal-card-body">
           <div className="Content">
@@ -37,7 +36,7 @@ const Lightbox = ({ stateModal }) => {
             </div>
             <div className="has-text-centered">
               <h1>Sofia Bonavena</h1>
-              <p>Diseño UI - 3er año - 2021</p>
+              <p>Diseño - 3er año - 2021</p>
             </div>
           </div>
         </section>
