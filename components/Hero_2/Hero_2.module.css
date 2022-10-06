@@ -1,19 +1,117 @@
-.container{
+.container1{
     background-image: url('/assets/imagenAbajo2.svg');
     width: 100%;
     background-position: 10% 55%;
     background-size: contain;
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
-.text{
-    color: #E77D2D;
-    font-size: 2em;
+.hero-body{
+    padding: 18rem 7rem;
+    height: 100%;
     text-align: center;
-    margin: 0 auto;
-    width: 95%;
-    font-family: Montserrat;
-    line-height: 60px;
 }
 
-/*hola*/
+@media only screen and (max-width: 769px) {
+    .textmobile{
+        color: #E77D2D;
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+        font-family: Montserrat;
+    }
+    
+    /* Significa que este NO se ve */
+    .hero-containerdesktop{
+        display: none;
+    }
+    
+    /* Significa que este se ve */
+    .hero-containermobile{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .textdesktop{
+        color: #E77D2D;
+        font-size: 1em;
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        font-family: Montserrat;
+    }
+
+    /* Significa que este se ve */
+    .hero-containerdesktop{
+        display: block;
+    }
+
+    /* Significa que este NO se ve */
+    .hero-containermobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .textdesktop{
+        color: #E77D2D;
+        font-size: 1em;
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        font-family: Montserrat;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .textdesktop{
+        color: #E77D2D;
+        font-size: 1.3em;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        font-family: Montserrat;
+    }
+}
+
+
+@media only screen and (min-width: 1023px) {
+    .textdesktop{
+        color: #E77D2D;
+        font-size: 1.8em;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        font-family: Montserrat;
+    }
+}
+
+/* @media only screen and (max-width: 1100px) {
+
+    .text{
+        color: #E77D2D;
+        font-size: 2em;
+        text-align: center;
+        margin: 0 auto;
+        width: 70%;
+        font-family: Montserrat;
+        line-height: 50px;
+    }
+} */
+/* 
+@media only screen and (max-width: 1100px) {
+
+    
+    .text{
+        color: #E77D2D;
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0 auto;
+        width: 95%;
+        font-family: Montserrat;
+    }
+
+} */
