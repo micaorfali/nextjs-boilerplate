@@ -21,6 +21,9 @@ const Column_5 = () => {
         <div className={`column is-one-third ${styles['divrounded']}`}>
           <Card_Rounded></Card_Rounded>
         </div>
+        <div className={`column is-one-third ${styles['divrounded']}`}>
+          <Card_Rounded></Card_Rounded>
+        </div>
       </div>
     </div>
   );
