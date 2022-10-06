@@ -16,12 +16,11 @@ const Lightbox = ({ stateModal }) => {
       <div className="modal-card">
         <header className="modal-card-head">
           <Image
-            src="/assets/logo.svg"
+            src="/assets/logonegro.svg"
             alt="Bulma: a modern CSS framework based on Flexbox"
             width={124}
             height={40}
           />
-          <button className="delete" aria-label="close"></button>
         </header>
         <section className="modal-card-body">
           <div className="Content">
