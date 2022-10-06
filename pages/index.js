@@ -15,6 +15,7 @@ import Subtitle from '../components/Subtitle/Subtitle';
 import Hero_2 from '../components/Hero_2/Hero_2';
 import { FavContext } from '../contexts/FavContext';
 import { useContext } from 'react';
+import { getFirestore } from '../utils/firebase';
 
 export default function Home() {
   const { fav, setFav } = useContext(FavContext);
