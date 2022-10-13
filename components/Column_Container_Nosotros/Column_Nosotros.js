@@ -1,9 +1,9 @@
 import Card_Rounded from '../Card_Rounded/Card_Rounded';
-import styles from './Column_5.module.css';
+import styles from './Column_nosotros.module.css';
 import { useEffect, useState, useContext } from 'react';
 import { getFirestore } from '../../utils/firebase';
 
-const Column_5 = () => {
+const Column_Nosotros = () => {
   const [favProyects, setFavProyects] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -48,4 +48,4 @@ const Column_5 = () => {
   );
 };
 
-export default Column_5;
+export default Column_Nosotros;
