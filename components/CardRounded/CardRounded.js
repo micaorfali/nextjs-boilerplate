@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from '../Card_Rounded/Card_Rounded.module.css';
+import styles from '../CardRounded/CardRounded.module.css';
 import Image from 'next/image';
 
-const Card_Rounded = ({ img, name, rol }) => {
+const CardRounded = ({ img, name, rol }) => {
   return (
     <div className={`image mx-auto my-0 ${styles['container']}`}>
       <Image
@@ -20,4 +20,4 @@ const Card_Rounded = ({ img, name, rol }) => {
   );
 };
 
-export default Card_Rounded;
+export default CardRounded;
