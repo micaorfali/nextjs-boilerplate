@@ -32,10 +32,13 @@ const NavBar = () => (
     <div id="navbarExampleTransparentExample" className="navbar-menu">
       <div className="navbar-end pr-6">
         <Link href="/disenio">
-          <a className="navbar-item has-text-weight-bold">Programación</a>
+          <a className="navbar-item has-text-weight-bold">Diseño</a>
         </Link>
         <Link href="/programacion">
-          <a className="navbar-item has-text-weight-bold">Diseño</a>
+          <a className="navbar-item has-text-weight-bold">Programación</a>
+        </Link>
+        <Link href="/favoritos">
+          <a className="navbar-item has-text-weight-bold">Favoritos</a>
         </Link>
       </div>
     </div>

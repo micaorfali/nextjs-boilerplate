@@ -33,7 +33,15 @@ const Card = () => {
       <div className="card-content">
         <div className="media">
           <div className="media-content">
-            <span className={`tag ${styles['tagg']}`}>Programación</span>
+            <div className={`${styles['favs']}`}>
+              <span className={`tag ${styles['tagg']}`}>Programación</span>
+              <Image
+                src="/assets/heartRegular.svg"
+                alt="Agregar a Favoritos"
+                width={30}
+                height={30}
+              />
+            </div>
             <p className={`title is-4 ${styles['title']}`}>John Smith</p>
           </div>
         </div>
