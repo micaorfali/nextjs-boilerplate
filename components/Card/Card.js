@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './Card.module.css';
-import Link from 'next/link';
 import Image from 'next/image';
 import Lightbox from '../Lightbox/Lightbox';
 
@@ -38,9 +37,7 @@ const Card = () => {
             <p className={`title is-4 ${styles['title']}`}>John Smith</p>
           </div>
         </div>
-        <Link href="/singlepage">
-          <a className={`button ${styles['boton']}`}> VER </a>
-        </Link>
+        <a className={`button ${styles['boton']}`}> VER </a>
       </div>
     </div>
   );
