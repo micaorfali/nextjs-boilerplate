@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['bulma.io'],
+    domains: ['bulma.io', 'firebasestorage.googleapis.com'],
   },
 };
 
