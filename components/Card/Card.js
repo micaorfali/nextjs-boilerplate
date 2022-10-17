@@ -37,7 +37,7 @@ const Card = () => {
             <div className={`${styles['favs']}`}>
               <span className={`tag ${styles['tagg']}`}>Programación</span>
               <Image
-                src="/assets/heartRegular.svg"
+                src="/assets/nofavorito.svg"
                 alt="Agregar a Favoritos"
                 width={30}
                 height={30}
