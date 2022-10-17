@@ -20,14 +20,14 @@ const NavBar = () => (
           />
         </a>
       </Link>
-    </div>
-    <div
-      className="navbar-burger"
-      data-target="navbarExampleTransparentExample"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
+      <div
+        className="navbar-burger"
+        data-target="navbarExampleTransparentExample"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <div id="navbarExampleTransparentExample" className="navbar-menu">
       <div className="navbar-end pr-6">
