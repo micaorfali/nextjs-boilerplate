@@ -15,11 +15,7 @@ const Card = () => {
   };
 
   return (
-    <div
-      className={`card ${styles['container']}`}
-      onClick={() => changeStateModal()}
-    >
-      <Lightbox changeStateModal={changeStateModal} stateModal={stateModal} />
+    <div className={`card ${styles['container']}`}>
       <div>
         <figure className={`${styles['figurecontainer']}`}>
           <Image
@@ -45,7 +41,13 @@ const Card = () => {
             <p className={`title is-4 ${styles['title']}`}>John Smith</p>
           </div>
         </div>
-        <a className={`button ${styles['boton']}`}> VER </a>
+        <div onClick={() => changeStateModal()}>
+          <Lightbox
+            changeStateModal={changeStateModal}
+            stateModal={stateModal}
+          />
+          <a className={`button ${styles['boton']}`}>VER</a>
+        </div>
       </div>
     </div>
   );
