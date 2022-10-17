@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './Card.module.css';
-import Link from 'next/link';
 import Image from 'next/image';
 import Lightbox from '../Lightbox/Lightbox';
 
@@ -16,11 +15,7 @@ const Card = () => {
   };
 
   return (
-    <div
-      className={`card ${styles['container']}`}
-      onClick={() => changeStateModal()}
-    >
-      <Lightbox changeStateModal={changeStateModal} stateModal={stateModal} />
+    <div className={`card ${styles['container']}`}>
       <div>
         <figure className={`${styles['figurecontainer']}`}>
           <Image
@@ -46,9 +41,13 @@ const Card = () => {
             <p className={`title is-4 ${styles['title']}`}>John Smith</p>
           </div>
         </div>
-        <Link href="/singlepage">
-          <a className={`button ${styles['boton']}`}> VER </a>
-        </Link>
+        <div onClick={() => changeStateModal()}>
+          <Lightbox
+            changeStateModal={changeStateModal}
+            stateModal={stateModal}
+          />
+          <a className={`button ${styles['boton']}`}>VER</a>
+        </div>
       </div>
     </div>
   );

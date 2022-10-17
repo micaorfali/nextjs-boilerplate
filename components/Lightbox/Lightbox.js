@@ -21,7 +21,6 @@ const Lightbox = ({ stateModal }) => {
             width={124}
             height={40}
           />
-          <button className="delete" aria-label="close"></button>
         </header>
         <section className="modal-card-body">
           <div className="Content">
