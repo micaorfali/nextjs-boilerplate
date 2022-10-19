@@ -4,7 +4,6 @@ import 'bulma/css/bulma.css';
 import Hero from '../components/Hero/Hero';
 import Grid from '../components/Grid/Grid';
 import Title from '../components/Title/Title';
-import Column_5 from '../components/Column_Container_Nosotros/Column_Nosotros';
 import Footer from '../components/Footer/Footer';
 import Subtitle from '../components/Subtitle/Subtitle';
 import Hero_2 from '../components/Hero_2/Hero_2';
