@@ -1,9 +1,9 @@
-import Card_Rounded from '../Card_Rounded/Card_Rounded';
-import styles from './Column_nosotros.module.css';
+import CardRounded from '../CardRounded/CardRounded';
+import styles from './ColumnNosotros.module.css';
 import { useEffect, useState, useContext } from 'react';
 import { getFirestore } from '../../utils/firebase';
 
-const Column_Nosotros = () => {
+const ColumnNosotros = () => {
   const [favProyects, setFavProyects] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -37,7 +37,7 @@ const Column_Nosotros = () => {
                 key={index}
                 className={`column is-one-third ${styles['divrounded']}`}
               >
-                <Card_Rounded
+                <CardRounded
                   img={member.img}
                   name={member.name}
                   rol={member.rol}
@@ -50,4 +50,4 @@ const Column_Nosotros = () => {
   );
 };
 
-export default Column_Nosotros;
+export default ColumnNosotros;
