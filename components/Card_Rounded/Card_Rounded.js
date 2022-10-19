@@ -6,7 +6,7 @@ const Card_Rounded = ({ img, name, rol }) => {
   return (
     <div className={`image mx-auto my-0 ${styles['container']}`}>
       <Image
-        className="is-rounded"
+        className={`is-rounded ${styles['img']}`}
         src={img}
         alt="Placeholder image"
         height={256}

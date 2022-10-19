@@ -26,8 +26,10 @@ const Column_5 = () => {
     getProyects();
   }, []);
   return (
-    <div className="container is-widescreen my-6">
-      <div className="columns is-multiline is-justify-content-center">
+    <div className={`is-widescreen my-6 ${styles['containercolumn']}`}>
+      <div
+        className={`columns is-multiline is-justify-content-center ${styles['columnspecial']}`}
+      >
         {!loading &&
           favProyects.map((member, index) => {
             return (
