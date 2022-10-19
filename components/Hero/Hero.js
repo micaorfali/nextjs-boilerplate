@@ -7,7 +7,7 @@ const imagenesHero = [
   'heroprog.png',
   'herofavoritos.png',
 ];
-const Hero = () => {
+const Hero = (num) => {
   return (
     <section
       className={`hero is-large ${styles['container']}`}

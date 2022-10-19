@@ -10,6 +10,7 @@ import About from '../components/About/About';
 import { FavContext } from '../contexts/FavContext';
 import { useContext } from 'react';
 import ColumnNosotros from '../components/ColumnNosotros/ColumnNosotros';
+import CardInfo from '../components/CardInfo/CardInfo';
 
 export default function Home() {
   const { fav, setFav } = useContext(FavContext);
@@ -28,6 +29,7 @@ export default function Home() {
       <Subtitle>UMAI</Subtitle>
       <Title>Proyectos</Title>
       <Grid></Grid>
+      <CardInfo />
       <Subtitle>Conocenos</Subtitle>
       <Title>Nosotros</Title>
       <ColumnNosotros />
