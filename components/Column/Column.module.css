@@ -1,0 +1,21 @@
+@media (min-width: 481px) and (max-width: 1199px){
+    .containercolumn{
+        --columnGap: 0 !important;
+    }
+
+    .columnind{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+  }
+
+@media (max-width: 480px){
+    .containercolumn{
+        --columnGap: 0 !important;
+    }
+
+    .columnind{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+  }
