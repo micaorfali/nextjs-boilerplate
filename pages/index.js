@@ -27,11 +27,7 @@ export default function Home() {
       <About />
       <Subtitle>UMAI</Subtitle>
       <Title>Proyectos</Title>
-<<<<<<< Updated upstream
-      <Grid></Grid>
-=======
       <CardInfo />
->>>>>>> Stashed changes
       <Subtitle>Conocenos</Subtitle>
       <Title>Nosotros</Title>
       <ColumnNosotros />
