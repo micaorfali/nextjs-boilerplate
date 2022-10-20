@@ -41,3 +41,30 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.mediacontainer{
+    overflow-x: unset !important;
+}
+
+@media (min-width: 481px) and (max-width: 1199px){
+    .footernavbar{
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        background-color: black;
+    }
+  }
+
+@media (max-width: 480px){
+    .cardcontainer{
+        padding: 0 2em 1.5em !important;
+    }
+
+    .title{
+        font-size: 1.1em !important;
+    }
+
+    .boton{
+        font-size: 0.9em !important;
+    }
+  }

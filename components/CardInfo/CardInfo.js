@@ -36,12 +36,18 @@ const Products = () => {
   const goToProduct = (id) => router.push(`/cardsProjects/${id}`);
 
   return (
-
     <div className={`grid inner`}>
       {!loading &&
         products.map(({ id, title, student, catId, ano, img, desc }) => (
           <div key={id} className={`col_4`}>
-            <Card title={title} id={id} student={student} img={img} ano={ano} desc={desc} />
+            <Card
+              title={title}
+              id={id}
+              student={student}
+              img={img}
+              ano={ano}
+              desc={desc}
+            />
             {/* <button onClick={() => goToProduct(id)}>View project</button> */}
           </div>
         ))}
