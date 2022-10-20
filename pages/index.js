@@ -6,6 +6,7 @@ import Grid from '../components/Grid/Grid';
 import Title from '../components/Title/Title';
 import Footer from '../components/Footer/Footer';
 import Subtitle from '../components/Subtitle/Subtitle';
+import CardInfo from '../components/CardInfo/CardInfo';
 import About from '../components/About/About';
 import { FavContext } from '../contexts/FavContext';
 import { useContext } from 'react';
