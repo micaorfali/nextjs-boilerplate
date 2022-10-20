@@ -25,6 +25,9 @@ const Card = () => {
             height={900}
           />
         </figure>
+        <figure className={styles['figurecontainer']}>
+          <Image src={img} alt="Placeholder image" width={1200} height={900} />
+        </figure>
       </div>
       <div className={`card-content ${styles['cardconteiner']}`}>
         <div className="media">
@@ -38,7 +41,7 @@ const Card = () => {
                 height={30}
               />
             </div>
-            <p className={`title is-4 ${styles['title']}`}>John Smith</p>
+            <p className={`title is-4 ${styles['title']}`}>{title}</p>
           </div>
         </div>
         <div onClick={() => changeStateModal()}>

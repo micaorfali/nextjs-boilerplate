@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Lightbox.module.css';
 import Image from 'next/image';
 
-const Lightbox = ({ stateModal }) => {
+const Lightbox = ({ stateModal, src, student, ano, desc }) => {
   let className = '';
 
   if (stateModal) {
@@ -27,7 +27,7 @@ const Lightbox = ({ stateModal }) => {
             <div>
               <figure className={`${styles['figurecontainer']}`}>
                 <Image
-                  src="/assets/hero.png"
+                  src={src}
                   alt="Placeholder image"
                   width={1200}
                   height={900}
@@ -35,8 +35,9 @@ const Lightbox = ({ stateModal }) => {
               </figure>
             </div>
             <div className="has-text-centered">
-              <h1>Sofia Bonavena</h1>
-              <p>Diseño - 3er año - 2021</p>
+              <h1>{student}</h1>
+              <p>Diseño - {ano} - 2021</p>
+              <p>{desc}</p>
             </div>
           </div>
         </section>
