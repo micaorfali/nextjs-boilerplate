@@ -13,7 +13,7 @@ const Card = () => {
       setStateModal(true);
     }
   };
-
+  
   return (
     <div className={`card ${styles['container']}`}>
       <div>
