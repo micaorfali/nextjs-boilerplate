@@ -17,7 +17,7 @@ const Card = () => {
   return (
     <div className={`card ${styles['container']}`}>
       <div>
-        <figure className={`${styles['figurecontainer']}`}>
+        <figure className={styles['figurecontainer']}>
           <Image
             src="/assets/hero.png"
             alt="Placeholder image"
@@ -26,10 +26,10 @@ const Card = () => {
           />
         </figure>
       </div>
-      <div className="card-content">
+      <div className={`card-content ${styles['cardconteiner']}`}>
         <div className="media">
-          <div className="media-content">
-            <div className={`${styles['favs']}`}>
+          <div className={`media-content ${styles['mediacontainer']}`}>
+            <div className={styles['favs']}>
               <span className={`tag ${styles['tagg']}`}>Programación</span>
               <Image
                 src="/assets/nofavorito.svg"
