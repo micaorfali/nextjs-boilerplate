@@ -9,10 +9,11 @@ const NavBar = () => (
     role="navigation"
     aria-label="main navigation"
   >
-    <div className="navbar-brand pl-6">
+    <div className={`navbar-brand ${styles['containerdiv']}`}>
       <Link href="/">
-        <a className="navbar-item py-5">
+        <a className={`navbar-item ${styles['containerimg']}`}>
           <Image
+            className={`${styles['img']}`}
             src="/assets/logo.svg"
             alt="Bulma: a modern CSS framework based on Flexbox"
             width={124}
@@ -21,12 +22,12 @@ const NavBar = () => (
         </a>
       </Link>
       <div
-        className="navbar-burger"
+        className={`navbar-burger ${styles['containermenu']}`}
         data-target="navbarExampleTransparentExample"
       >
-        <span></span>
-        <span></span>
-        <span></span>
+        <span className={`${styles['menu']}`}></span>
+        <span className={`${styles['menu']}`}></span>
+        <span className={`${styles['menu']}`}></span>
       </div>
     </div>
     <div id="navbarExampleTransparentExample" className="navbar-menu">

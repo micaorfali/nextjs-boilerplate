@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className={`footer ${styles['footercom']}`}>
       <nav className={`navbar ${styles['footercontent']}`}>
-        <div className="navbar-brand">
+        <div className={`navbar-brand ${styles['footerbrand']}`}>
           <a className="navbar-item" href="https://bulma.io">
             <Link href="/">
               <Image
@@ -18,17 +18,12 @@ const Footer = () => {
               />
             </Link>
           </a>
-          <div
-            className="navbar-burger"
-            data-target="navbarExampleTransparentExample"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
         </div>
 
-        <div id="navbarExampleTransparentExample" className="navbar-menu">
+        <div
+          id="navbarExampleTransparentExample"
+          className={`navbar-menu ${styles['footernavbar']}`}
+        >
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="field is-grouped">
@@ -42,6 +37,7 @@ const Footer = () => {
                         alt="Bulma: a modern CSS framework based on Flexbox"
                         width={20}
                         height={20}
+                        className={`${styles['img']}`}
                       />
                     </Link>
                   </a>
@@ -56,6 +52,7 @@ const Footer = () => {
                         alt="Bulma: a modern CSS framework based on Flexbox"
                         width={20}
                         height={20}
+                        className={`${styles['img']}`}
                       />
                     </Link>
                   </a>
@@ -70,6 +67,7 @@ const Footer = () => {
                         alt="Bulma: a modern CSS framework based on Flexbox"
                         width={20}
                         height={20}
+                        className={`${styles['img']}`}
                       />
                     </Link>
                   </a>
