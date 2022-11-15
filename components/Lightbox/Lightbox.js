@@ -35,13 +35,12 @@ const Lightbox = ({ stateModal, src, student, ano, desc }) => {
               </figure>
             </div>
             <div className="has-text-centered">
-              <h1>{student}</h1>
+              <h1><b>{student}</b></h1>
               <p>Diseño - {ano} - 2021</p>
               <p>{desc}</p>
             </div>
           </div>
         </section>
-        <footer className="modal-card-foot"></footer>
       </div>
     </div>
   );

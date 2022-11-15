@@ -15,7 +15,9 @@ const Products = () => {
       try {
         const db = getFirestore();
         const itemsCollection = db.collection(`projects`);
-        const itemSnapshot = await itemsCollection.get();
+        const itemSnapshot = await itemsCollection
+          .where(`catId`, `==`, `p2Req05m7kO7NGYLQw89`)
+          .get();
 
         const categoryItems = db.collection(`category`);
         const categorySnapshot = await categoryItems.get();
@@ -42,7 +44,6 @@ const Products = () => {
             <Card
               title={title}
               id={id}
-              catId={catId}
               student={student}
               img={img}
               ano={ano}

@@ -72,3 +72,7 @@ a {
 .long_gap { grid-column-gap: 40px; }	
 	
 }
+
+.modal-card-body{
+  border-radius: 0 0 6px 6px !important;
+}

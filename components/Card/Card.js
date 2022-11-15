@@ -26,12 +26,6 @@ const Card = ({ title, id, student, img, ano, desc }) => {
           <div className={`media-content ${styles['mediacontainer']}`}>
             <div className={styles['favs']}>
               <span className={`tag ${styles['tagg']}`}>Programación</span>
-              <Image
-                src="/assets/nofavorito.svg"
-                alt="Agregar a Favoritos"
-                width={30}
-                height={30}
-              />
             </div>
             <p className={`title is-4 ${styles['title']}`}>{title}</p>
           </div>

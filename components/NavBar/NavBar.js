@@ -38,9 +38,6 @@ const NavBar = () => (
         <Link href="/programacion">
           <a className="navbar-item has-text-weight-bold">Programación</a>
         </Link>
-        <Link href="/favoritos">
-          <a className="navbar-item has-text-weight-bold">Favoritos</a>
-        </Link>
       </div>
     </div>
   </nav>
