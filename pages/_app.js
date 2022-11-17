@@ -1,12 +1,12 @@
-import '../styles/globals.css'
-import {AppContext, AppProvider} from '../contexts/AppContext';
+import '../styles/globals.css';
+import { FavProvider } from '../contexts/FavContext';
 
 function MyApp({ Component, pageProps }) {
-  return(
-    <AppContext>
+  return (
+    <FavProvider>
       <Component {...pageProps} />
-    </AppContext>
-  )
-}
+    </FavProvider>
+  );
+ }
 
 export default MyApp;
