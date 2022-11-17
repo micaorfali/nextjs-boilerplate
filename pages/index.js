@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../components/NavBar/NavBar';
 import 'bulma/css/bulma.css';
+
 import Hero from '../components/Hero/Hero';
 import Grid from '../components/Grid/Grid';
 import Title from '../components/Title/Title';
