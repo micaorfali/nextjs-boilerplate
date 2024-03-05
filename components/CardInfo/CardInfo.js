@@ -8,6 +8,7 @@ import Card from '../Card/Card';
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [categories, setCategories] = useState([]);
   const router = useRouter();
 
   useEffect(() => {
@@ -24,8 +25,13 @@ const Products = () => {
         const items = itemSnapshot.docs.map((doc) => {
           return { id: doc.id, ...doc.data() };
         });
+        const categories = categorySnapshot.docs.map((doc)=>{
+          return { id: doc.id, ...doc.data()};
+        });
+        console.log(categories);
         setProducts(items);
         setLoading(false);
+        setCategories(categories)
       } catch (error) {
         console.log(error);
       }
@@ -35,13 +41,18 @@ const Products = () => {
 
   const goToProduct = (id) => router.push(`/cardsProjects/${id}`);
 
+  const getCategoryName = (catId) =>{
+    const {description}= categories.find(item => item.id === catId)
+    return description;
+  }
+
   return (
 
     <div className={`grid inner`}>
       {!loading &&
         products.map(({ id, title, student, catId, ano, img, desc }) => (
           <div key={id} className={`col_4`}>
-            <Card title={title} id={id} student={student} img={img} ano={ano} desc={desc} />
+            <Card title={title} id={id} student={student} img={img} ano={ano} desc={desc} catDescription={getCategoryName(catId)}/>
             {/* <button onClick={() => goToProduct(id)}>View project</button> */}
           </div>
         ))}

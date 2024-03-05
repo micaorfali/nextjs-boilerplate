@@ -3,7 +3,7 @@ import styles from './Card.module.css';
 import Image from 'next/image';
 import Lightbox from '../Lightbox/Lightbox';
 
-const Card = ({title, id, student, img, ano, desc}) => {
+const Card = ({title, student, img, ano, desc, catDescription}) => {
   const [stateModal, setStateModal] = useState(false);
 
   const changeStateModal = () => {
@@ -25,7 +25,7 @@ const Card = ({title, id, student, img, ano, desc}) => {
         <div className="media">
           <div className="media-content">
             <div className={`${styles['favs']}`}>
-              <span className={`tag ${styles['tagg']}`}>Programación</span>
+              <span className={`tag ${styles['tagg']}`}>{catDescription}</span>
               <Image
                 src="/assets/nofavorito.svg"
                 alt="Agregar a Favoritos"
